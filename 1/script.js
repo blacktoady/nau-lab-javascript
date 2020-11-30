@@ -3,59 +3,68 @@
 // let partnerName = prompt("your partner's name: ");
 
 // if (name == "") {
-//     alert("please enter your name");
+//     console.log("please enter your name");
 // }   else if (name.lenght <= 2) {
-//     alert("incorrect name");
+//     console.log("incorrect name");
 // }   else if (partnerName == "") {
-//     alert("please enter your partner's name");
+//     console.log("please enter your partner's name");
 // }   else if (partnerName.lenght <= 2) {
-//     alert("incorrect partner's name");
+//     console.log("incorrect partner's name");
 // }   else {
 //     let data = Math.random() * 100;
 //     data = Math.floor(data);
-//     alert("compatibility of " + name + " and " + partnerName + " is " + data);
+//     console.log("compatibility of " + name + " and " + partnerName + " is " + data);
 // }
 
 // // bmi calculator
-// let height = prompt("your height (cm):");
-// let weight = prompt("your weight (kg):");
 
-// height = height / 100;
+// function bmi(height, weight) {
+//     height = height / 100;
 
-// let bmi = weight / (height ** 2);
+//     let bmi = weight / (height ** 2);
 
-// if (bmi >= 18.6 && bmi <= 25) {
-//     alert("Normal");
-// }   else if (bmi < 16) {
-//     alert("Acute underweight");
-// }   else if (bmi >= 16 && bmi < 18.6) {
-//     alert("Underweight");
-// }   else if (bmi > 25 && bmi < 30) {
-//     alert("Overweight");
-// }   else if (bmi > 30) {
-//     alert("Obesity");
-// }   else {
-//     alert("something went wrong");
+//     if (bmi >= 18.6 && bmi <= 25) {
+//         console.log("Normal");
+//     }   else if (bmi < 16) {
+//         console.log("Acute underweight");
+//     }   else if (bmi >= 16 && bmi < 18.6) {
+//         console.log("Underweight");
+//     }   else if (bmi > 25 && bmi < 30) {
+//         console.log("Overweight");
+//     }   else if (bmi > 30) {
+//         console.log("Obesity");
+//     }   else {
+//         console.log("something went wrong");
+//     }
 // }
+
+// bmi(178, 68);
 
 // // leap year
-// let year = +prompt("year:");
 
-// if ((year % 100) == 0) {
-//     if ((year % 400) == 0) {
-//         alert("leap year");
+// function leapYear(year) {
+//     if ((year % 100) == 0) {
+//         if ((year % 400) == 0) {
+//             console.log("leap year");
+//         }   else {
+//             console.log("common year");
+//         }
+//     }   else if ((year % 4) == 0) {
+//         console.log("leap year");
 //     }   else {
-//         alert("common year");
+//         console.log("common year");
 //     }
-// }   else if ((year % 4) == 0) {
-//     alert("leap year");
-// }   else {
-//     alert("common year");
 // }
 
-// Who’s buying Coffee?
-let names = Array("Keith", "Joe", "Daniel", "Ivan", "Peter", "Nicholas", "Alex", "Tim");
+// leapYear(2011);
 
-let name = names[Math.floor(Math.random()*names.length)];
 
-console.log(name);
+// // Who’s buying Coffee?
+// function coffee() {
+//     let names = new Array("Keith", "Joe", "Daniel", "Ivan", "Peter", "Nicholas", "Alex", "Tim");
+
+//     let name = names[Math.floor(Math.random()*names.length)];
+
+//     return name;
+// }
+// console.log(coffee());
